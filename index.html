@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.js">
+</head>
+<body>
+  <h2>🌟 Task Management System</h2>
+  <form id="taskForm">
+    <input type="hidden" id="taskId">
+    <label>Title:
+      <input type="text" id="title" required>
+    </label>
+    <label>Description:
+      <textarea id="description" required></textarea>
+    </label>
+    <label>Status:
+      <select id="status">
+        <option>To Do</option>
+        <option>In Progress</option>
+        <option>Done</option>
+      </select>
+    </label>
+    <label>Due Date:
+      <input type="date" id="dueDate" required>
+    </label>
+    <button type="submit">💾 Save Task</button>
+    <p class="error" id="errorMsg"></p>
+  </form>
+  <h3>🗂️ Task List</h3>
+  <div id="taskList"></div>
+</body>
+</html>
